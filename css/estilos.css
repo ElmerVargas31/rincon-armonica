@@ -1,0 +1,244 @@
+/*
+    Estudiante: Elmer Vargas Salazar
+    Curso: Empleo de Normas de Accesibilidad Web
+*/
+
+/*---RESET CSS---*/
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+/*---ESTILOS GENERALES---*/
+
+/*Otorgar animación y padding al scroll*/
+html{
+    scroll-behavior: smooth; scroll-padding: 140px;
+}
+
+/*Establecer Colores*/
+:root{
+    --color-cafe: #752700;
+    --beige-card: #FAF5CF; 
+    --negro-footer: #333333;
+}
+
+/*Títulos y Párrafos*/
+h1,h2{font-family: Candara; color: var(--color-cafe);}
+h1{font-size: 40px; text-align: center; margin-bottom: 20px;}
+.cont_informacion h2{font-size: 30px; margin-bottom: 15px;}
+p,.flex li,table,figcaption{
+    font-family: Arial, Helvetica, sans-serif; font-size: 16px;
+}
+
+/*Vínculos y Listas*/
+nav ul{list-style: none;}
+nav ul li a, #btn_menu, .fila_tarj a, #play, 
+#pause, #hosting, #ancla,#btn_acce,#panel_acce a{
+    text-decoration: none; cursor: pointer; user-select: none;
+}
+
+/*Focus - Tecla TAB*/
+nav ul li a:focus-visible, #btn_menu:focus-visible, .fila_tarj a:focus-visible, 
+#play:focus-visible, #pause:focus-visible, #ancla:focus-visible, 
+#btn_acce:focus-visible, #panel_acce button:focus-visible{
+    border: 1px solid rgb(240, 170, 40); outline: none;
+}
+
+/*Flexbox*/
+header,.flex,.fila_tarj,footer{
+    display: flex; justify-content: space-evenly;
+}
+
+/*Estructura de Contenedores*/
+.cont_informacion,.cont_tarjetas,.cont_multi{
+    width: 80%; height: 100%; margin: 0 auto;
+    background-color: #fff; border: 2px solid var(--color-cafe); padding: 30px;
+}
+.cont_multi{height: 800px;}
+.cont_tarjetas{padding-bottom: 50px;}
+
+/*---ENCABEZADO - MENU---*/
+header{
+    height: 160px; width: 100%; position: fixed; 
+    margin-top: -200px; z-index: 1000;
+    background-color: var(--beige-card); 
+    border-bottom: 2px solid #75270099; 
+}
+#logo{
+    width: 100%; height: 140px;
+    margin-top: 8px; margin-left: 15%;
+} 
+.menu{
+    width: 60%; height: 50px; padding-top: 1%; 
+    padding-left: 2%; margin-top: 50px;
+}
+.menu ul li a{
+    float: left; margin: 0 10px; width: 20%; 
+    font-size: 22px; font-family: Candara; text-align: center;
+    color: var(--color-cafe); transition: 300ms all;
+}
+.menu ul li a:hover{transform: scale(1.2);}
+
+/*Ocultar Elementos Menu Responsive*/
+#btn_menu,.menu2{display: none;}
+#btn_menu{
+    background-color: #fff; color: var(--color-cafe);
+    text-align: center; border-radius: 10px; height: 60px;
+    width: 60px; padding: 4px 0; border: 1px solid #75270099;
+}
+
+/*---CONTENIDO PRINCIPAL---*/
+main{margin-top: 200px;}
+
+/*Estructura Parallax*/
+#parallax1,#parallax2,#parallax3,#parallax4{
+    background-size: 100% 100%; 
+    background-attachment: fixed;
+}
+#parallax2,#parallax3,#parallax4{padding: 50px 0;}
+#parallax1{padding-bottom: 45px;}
+#parallax2{background-image: url(../img/parallax1.jpg);}
+#parallax3{background-color: #f3f3f3;}
+#parallax4{background-image: url(../img/parallax2.jpg);}
+
+/*Bloque #1*/
+.slider{
+	list-style: none;
+	width: 80%; height: 450px;
+    margin: auto; display: flex;
+	position: relative; justify-content: center;
+    align-items: flex-end;
+}
+.slider img{
+	width: 100%; height: 100%;
+	position: absolute; top: 0; left: 0;
+	opacity: 0; transition: 0.4s all;
+}
+.slider input[type="radio"]{display: none;}
+.slider input[type="radio"]:checked ~ img{opacity: 1;}
+.slider input[type="radio"] + label{
+	z-index: 50; position: relative; float: left;
+	margin-bottom: 15px; margin-right: 10px;
+    width: 20px; height: 20px; text-align: center;
+	background-color: rgb(230, 230, 230);
+	border-radius: 50%; display: block; cursor: pointer;
+}
+.slider input[type="radio"]:checked + label{background-color: var(--color-cafe); color: #fff;}
+
+/*Bloque #2*/
+.cont_informacion,.cont_tarjetas,.cont_multi{opacity: 0; transition: 300ms;}
+#inicio,.flex{margin-bottom: 20px;}
+#inicio p, #lado1 li{margin-bottom: 15px;}
+#lado1,#lado2{padding: 10px;}
+#lado1{width: 65%;}
+#lado2{width: 35%; text-align: center;}
+#lado2 img{width: 80%; height: 200px;}
+#lado2 figcaption{color: var(--color-cafe); font-weight: bold; margin-top: 5px;}
+
+/*Tablas*/
+.lado{width: 50%;}
+#tabla1{margin-left: 15%;}
+#tabla2{margin: 6% 20%;}
+table, caption, th, tr, td{border-collapse: collapse; border: 1px solid var(--color-cafe);}
+table caption{
+    background-color: var(--color-cafe); 
+    color: #fff; font-weight: bold; 
+    height: 30px; padding: 5px 0;
+}
+table th{
+    background-color: var(--beige-card); color: var(--color-cafe); padding: 5px;
+}
+table td{text-align: center; background-color: #f5f5f5; padding: 0 8px;}
+.parte_arm{width: 80%; height: 100px; margin: 5px 10px;}
+.tipo_arm{width: 80%; height: 70px; margin: 5px 10px;}
+
+/*Bloque #3*/
+.tarj{
+    width: 100%; height: 100%; padding: 15px;
+    background-color: var(--beige-card);
+    border: 1px solid var(--color-cafe); 
+    transition: 400ms;
+}
+.tarj h2, figcaption{text-align: center;}
+.tarj h2{font-size: 25px; margin: 15px 0;}
+.tarj figcaption{color: var(--color-cafe); margin-bottom: 5px;}
+.tarj:hover{background-color: var(--color-cafe);}
+.tarj:hover h2, .tarj:hover figcaption{color: #fff;}
+
+/*Bloque #4*/
+.item_multi{height: 650px; width: 45%; float: left; margin: 0 2%;}
+.item_multi h2{font-size: 28px; margin: 12px 0; text-align: center;}
+#video{margin-left: 11%; margin-top: 5%; width: 80%; height: 250px}
+#desc_video,#desc_audio{
+    width: 80%; height: 35px; font-size: 18px; text-align: center;
+    font-family: Arial, Helvetica, sans-serif; background-color: var(--beige-card);
+    color: var(--color-cafe); border: 1px solid var(--color-cafe); 
+    font-weight: bold; margin-left: 11%; padding-top: 5px;
+}
+.desc_video, .desc_audio{
+    width: 80%; border: 1px solid var(--color-cafe); 
+    background-color: #f0f0f0; padding: 10px; 
+    margin-left: 11%; background-color: #f8f8f8;
+}
+.desc_video p, .desc_audio p{margin: 10px 0;}
+#tarj{
+    width: 80%; height: 355px; padding: 15px;
+    background-color: var(--beige-card);
+    border: 1px solid var(--color-cafe); 
+    margin-left: 11%; margin-bottom: 15px;
+}
+#tarj img{width: 80%; height: 175px; margin-left: 10%;}
+.btn_audio{
+    width: 80%; height: 50px; margin-top: 15px;
+    padding-left: 6%; margin-left: 11%;
+
+}
+#tarj button{
+    color: var(--color-cafe); float: left; 
+    text-align: center; margin-left: 10%;
+    background: transparent; border: none;
+}
+#tarj button p{margin-top: 5px;}
+
+/*---PIE DE PÁGINA---*/
+footer{
+    height: 180px; width: 100%; color: #fff;
+    background-color: var(--negro-footer);
+}
+.foot1,.foot2{
+    height: 180px; width: 40%; padding: 3% 0; text-align: center;
+}
+.foot1 p{margin: 5px 0;}
+.foot2 img{width: 220px; height: 120px; margin: 0 10px;}
+
+/*---ANCLA VOLVER AL INICIO - BOTÓN ACCESIBILIDAD---*/
+#ancla,#btn_acce{
+    position: fixed; bottom: 3%; right: 1%;
+    text-align: center; width: 100px; padding: 5px 0;
+    background-color: #fff; color: var(--color-cafe);
+    border-radius: 20px; border: 2px solid var(--color-cafe);
+}
+
+/*---ACCESIBILIDAD---*/
+#btn_acce{
+    bottom: 20%; right: 0.6%; width: 110px; height: 65px;
+    font-size: 15px; font-weight: bold; font-family: Arial, Helvetica, sans-serif;
+}
+#panel_acce{
+    position: fixed; height: 540px; width: 25%; z-index: 1000;
+    background-color: #f0fac8; left: -40%; bottom: 2%; transition: 300ms;
+}
+#panel_acce h2{
+    font-size: 25px; margin: 5px 0; text-align: center;
+}
+.bloque{
+    width: 90%; height: 90px; margin: 0px auto;
+    background-color: #e1d7afcc; display: flex;
+    justify-content: space-evenly; align-items: center;
+}
+#panel_acce button{
+    background-color: #fff; color: var(--color-cafe);
+    width: 100px; height: 80px; border-radius: 20px;
+    padding: 3px 5px; display: block; text-align: center; 
+    cursor: pointer; border: none;
+}
+#panel_acce button p{font-size: 16px; margin-top: 3px;}
+button#invertir, button#BN, button#rest_color{width: 85px; height: 55px;}

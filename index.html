@@ -1,0 +1,325 @@
+<!--
+    Estudiante: Elmer Vargas Salazar
+    Curso: Empleo de Normas de Accesibilidad Web
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--Metas-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Elmer Vargas Salazar">
+    <meta name="description" content="Sitio web que divulga información o características de interés sobre el instrumento musical armónica. También representa contenido audiovisual para el público.">
+    <meta name="keywords" content="armónica, instrumento, datos históricos, características, 
+    partes de la armónica, tipos de armónica, artistas musicales, multimedia">
+    <!--Título de Pestaña-->
+    <title>Rincón de la Armónica</title>
+    <!--Ícono de Pestaña-->
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <!--Font Awesome - Íconos Vectoriales-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--Hoja de Estilos CSS (Escritorio)-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--Hoja de Estilos CSS (Móvil - Tableta)-->
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!--ENCABEZADO - MENÚ-->
+    <header>
+        <!--Logo de la Página-->
+        <a href="index.html">
+            <img src="img/logo.png" id="logo" alt="Logo de Rincón de la Armónica">
+        </a>
+        <!--Barras Botón Menú (Responsive)-->
+        <a id="btn_menu">
+            <i class="fas fa-bars fa-2x"></i>
+            <p>Menú</p> 
+        </a>
+        <!--Menú Escritorio-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#parallax1">Inicio</a></li>
+                <li><a href="#parallax2">La Armónica</a></li>
+                <li><a href="#parallax3">Músicos</a></li>
+                <li><a href="#parallax4">Multimedia</a></li>
+            </ul>
+        </nav>
+        <!--Menú Responsive-->
+        <nav class="menu2">
+            <ul>
+                <li><a href="#parallax1">Inicio</a></li>
+                <li><a href="#parallax2">La Armónica</a></li>
+                <li><a href="#parallax3">Músicos</a></li>
+                <li><a href="#parallax4">Multimedia</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--CONTENIDO PRINCIPAL-->
+    <main>
+        <!--Bloque #1 (Parallax)-->
+        <section id="parallax1">
+            <!--Galería de Imágenes-->
+            <ul class="slider">                    
+                <li>
+                    <input type="radio" id="s-boton1" name="s-radio" checked="checked">
+                    <label for="s-boton1"></label>
+                    <img src="img/slider1.jpg" alt="Hombre tocando la armónica en una plaza">
+                </li>
+                <li>
+                    <input type="radio" id="s-boton2" name="s-radio">
+                    <label for="s-boton2"></label>
+                    <img src="img/slider2.jpg" alt="Armónica sobre una partitura y delante de una rosa">
+                </li>
+                <li>
+                    <input type="radio" id="s-boton3" name="s-radio">
+                    <label for="s-boton3"></label>
+                    <img src="img/slider3.jpg" alt="Imagen con la frase: 'La música nos hace sentir vivos'">
+                </li>
+			</ul>
+        </section>
+
+        <!--Bloque #2 (Parallax)-->
+        <section id="parallax2">
+            <!--Contenedor Información Escrita-->
+            <div class="cont_informacion">
+                <h1>Información sobre la armónica</h1>
+                <!--Artículo 1-->
+                <article id="inicio">
+                    <h2>¿Qué es la armónica?</h2>
+                    <p>La armónica o harmónica es un instrumento de viento, del <strong>grupo de instrumentos de viento de madera y metal</strong>, con lengüetas individuales por cada nota musical. Se toca respirando sobre uno de sus agujeros individuales o sobre múltiples agujeros a la vez ya sea aspirando o espirando. La presión causada por aspirar o espirar en las cámaras de las lengüetas causa que la lengüeta o lengüetas vibren creando sonido.</p>
+                    <p>Cada cámara tiene dos o más lengüetas de sonido, hechas de latón (aleación de zinc y cobre, erróneamente llamada bronce) o acero. Cada lengüeta está sujeta con remache en uno de sus lados y suelto en el otro extremo, siendo el extremo suelto el que vibra y crea el sonido. Cada lengüeta tiene un tono individual: Cada tono está determinado por el tamaño de la lengüeta. Las lengüetas más largas producen un sonido profunda y bajo, mientras que las más cortas producen uno más agudo.</p>
+                    <p>Hay muchos tipos de armónicas: <strong>diatónicas, cromáticas, trémolo, orquestales, bajo</strong>, etc. Cada una de ellas se diferencia por su timbre musical, tesitura y apropiado para ciertos estilos de música. La armónica diatónica se usa para música sin modulación, por lo que es necesario emplear diferentes armónicas para cambiar la tonalidad existiendo doce de las mismas entre las cuales las más usadas son: C (Do) A(La) y G (Sol).</p>
+                </article>
+
+                <!--Artículo 2-->
+                <article class="flex">
+                    <div id="lado1">
+                        <h2>Algunos datos históricos:</h2>
+                        <ul>
+                            <li>La armónica de cristal fue inventada en China en el año 3000 a. C. aproximadamente. La <strong>emperatriz Nyn-Kwa</strong> poseía un instrumento de lengüeta conocido como sheng (que significa <q>voz sublime</q>).</li>
+                            <li>En 1830, un inventor de Bohemia, Richter, inventó el instrumento tal como se lo conoce en la actualidad: diez agujeros, veinte lengüetas, alternancia de soplido y aspiración.</li>
+                            <li>La armónica más usada por los intérpretes de blues clásicos, la <strong>Marine Band</strong>, apareció en 1896 y sólo costaba cincuenta centavos.</li>
+                        </ul>
+                    </div>
+                    <figure id="lado2">
+                        <img src="img/historia.png" alt="Anuncio: Armónica 'Marine Band'">
+                        <figcaption>Publicidad: Armónica "Marine Band"</figcaption>
+                    </figure>
+                </article>
+
+                <!--Artículo 3-->
+                <article class="flex">
+                    <div class="lado">
+                        <h2>Características:</h2>
+                        <!--Partes de la Armónica-->
+                        <table id="tabla1">
+                            <caption>Partes de la armónica</caption>
+                            <tr>
+                                <th scope="col">
+                                    <strong>Nombre:</strong>
+                                </th>
+                                <th scope="col">
+                                    <strong>Imagen:</strong>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td><strong>Peine</strong></td>
+                                <td><img class="parte_arm" src="img/peine.jpg" alt="Peine de una armónica"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Juego de Lenguetas</strong></td>
+                                <td><img class="parte_arm" src="img/juego_lenguetas.jpg" alt="Juego de lenguetas de una armónica"></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="lado">
+                        <!--Tipos de Armónica-->
+                        <table id="tabla2">
+                            <caption>Tipos de armónica</caption>
+                            <tr>
+                                <th scope="col">
+                                    <strong>Clasificación:</strong>  
+                                </th>
+                                <th scope="col">
+                                    <strong>Imagen:</strong>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td><strong>Cromática</strong></td>
+                                <td><img class="tipo_arm" src="img/cromatica.jpg" alt="Armónica Cromática"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Diatónica</strong></td>
+                                <td><img class="tipo_arm" src="img/diatonica.jpg" alt="Armónica Diatónica"></td>
+                            </tr>
+                            <tr>
+                                <td><strong>Octavada</strong></td>
+                                <td><img class="tipo_arm" src="img/octavada.jpg" alt="Armónica Octavada"></td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!--Bloque #3 (Parallax)-->
+        <section id="parallax3">
+            <!--Contenedor Tarjetas de los Músicos-->
+            <article class="cont_tarjetas">
+                <h1>Artistas musicales:</h1>
+                <!--Fila que acomoda cada tarjeta-->
+                <div class="fila_tarj">
+                    <a href="https://es.wikipedia.org/wiki/Toots_Thielemans" target="_blank">
+                        <figure class="tarj">
+                            <img src="img/thielemans.jpg" alt="Armonicista: Toots Thielemans">
+                            <h2>Toots Thielemans</h2>
+                            <figcaption>Lee acerca de su biografía</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://elpais.com/cultura/2017/03/17/actualidad/1489757601_501894.html" target="_blank">
+                        <figure class="tarj">
+                            <img src="img/cotton.jpg" alt="Armonicista: James Cotton">
+                            <h2>James Cotton</h2>
+                            <figcaption>Revisa una noticia de este músico</figcaption>
+                        </figure>
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=hTv5vQ-dutA" target="_blank">
+                        <figure class="tarj">
+                            <img src="img/luciani.jpg" alt="Armonicista: Franco Luciani">
+                            <h2>Franco Luciani</h2>
+                            <figcaption>Observa un video de este artista</figcaption>
+                        </figure>
+                    </a>
+                </div>
+            </article>
+        </section>
+
+        <!--Bloque #4 (Parallax)-->
+        <section id="parallax4">
+            <!--Contenedor para bloque de multimedia-->
+            <article class="cont_multi">
+                <h1>Contenido multimedia:</h1>
+                 <!--item_multi= acomoda todo el contenido del video y audio cada uno a la par-->
+                 <!--Video-->
+                <div class="item_multi">
+                    <iframe id="video" src="https://www.youtube.com/embed/ljjR3t4-oBQ" title="Imagine (John Lennon) en armónica" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <h2 id="imagine">Imagine (John Lennon)</h2>
+
+                    <!--Descripción de Video-->
+                    <div id="desc_video">Descripción del Video</div>
+                    <div class="desc_video">
+                        <p>Este video muestra como interpretar la melodía del popular clásico en inglés de John Lennon (Imagine) con una <strong>armónica diatónica en tonalidad de Do mayor</strong>.</p> <p>Se representan paso por paso las 8 líneas de la canción, cada una explica que notas de la escala musical se deben tocar usando el instrumento.</p>
+                    </div>
+                </div>
+                <!--Audio-->
+                <div class="item_multi">
+                    <figure id="tarj">
+                        <img class="img_audio" src="img/entrevista.png" alt="Georgina Becerra, armonicista entrevistada por la prensa.">
+                        <h2>Entrevista: Gina y su armónica</h2>
+                        <div class="btn_audio">
+                            <button id="play">
+                                <i class="fas fa-play fa-2x"></i>
+                                <p>Reproducir</p>
+                            </button>
+                            <button id="pause">
+                                <i class="fas fa-pause fa-2x"></i>
+                                <p>Pausar</p>
+                            </button> 
+                        </div>
+                        <audio src="media/entrevista.mp3" id="audio"></audio>
+                    </figure>
+
+                    <!--Descripción de Audio-->
+                    <div id="desc_audio">Descripción del Audio</div>
+                    <div class="desc_audio">
+                        <p>Este audio enfatiza en la entrevista a una señora mayor llamada Georgina Becerra que habita en la ciudad de Picón, es intérprete de armónica y quien a lo largo de su trayectoria ha grabado numerosas producciones musicales.</p>
+                        <p>Con cada melodía que ella ejecuta con el instrumento, rememora la simpleza de sus tiempos de antaño y también las diversas vivencias con la familia y amigos.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <!--PIE DE PÁGINA-->
+    <footer>
+        <div class="foot1">
+            <p>Diseñado por: Elmer Vargas Salazar</p>
+            <p>Curso: Empleo de Normas de Accesibilidad Web</p>
+            <p>Derechos Reservados - ©2021</p>
+        </div>
+        <div class="foot2">
+            <img src="img/wcag_2.1.png" id="wcag" alt="Logo de la WCAG 2.1, pautas de accesibilidad web.">
+            <img src="img/ina.png" id="ina" alt="Logo del Instituto Nacional de Aprendizaje (Costa Rica).">
+        </div>
+    </footer>
+
+    <!--BLOQUE - ACCESIBILIDAD-->
+
+    <!--Botón Accesibilidad-->
+    <button id="btn_acce">
+        Opciones de Accesibilidad
+    </button>
+
+    <!--Panel de Opciones-->
+    <div id="panel_acce">
+        <!--Panel - Letra-->
+        <h2>Letra</h2>
+        <div class="bloque">
+            <button id="let_gra">
+                <i class="fas fa-search-plus fa-2x"></i>
+                <p>Aumentar Letra</p>   
+            </button>
+            <button id="let_peq">
+                <i class="fas fa-search-minus fa-2x"></i>
+                <p>Disminuir Letra</p> 
+            </button>
+        </div>
+
+        <!--Panel - Espaciado-->
+        <h2>Espaciado</h2>
+        <div class="bloque">
+            <button id="espa">
+                <i class="fas fa-arrows-alt-h fa-2x"></i>
+                <p>Espaciado de Texto</p>  
+            </button>
+        </div>
+
+        <!--Panel - Subrayado-->
+        <h2>Subrayado</h2>
+        <div class="bloque">
+            <button id="sub_vinc">
+                <i class="fas fa-underline fa-2x"></i>
+                <p>Subrayar Vínculos</p>  
+            </button>
+            <button id="sub_titu">
+                <i class="fas fa-underline fa-2x"></i>
+                <p>Subrayar Títulos</p>  
+            </button>
+        </div>
+
+        <!--Panel - Colores-->
+        <h2>Colores</h2>
+        <div class="bloque">
+            <button id="invertir"><p>Invertir Colores</p></button>
+            <button id="BN"><p>Blanco y Negro</p></button>
+            <button id="rest_color"><p>Color Normal</p></button>
+        </div>
+    </div>
+
+    <!--ANCLA VOLVER AL INICIO-->
+    <a href="#" id="ancla" role="button">
+        <i class="fas fa-arrow-alt-circle-up fa-2x"></i>
+        <p>Volver al Inicio</p>
+    </a>
+
+    <!--Archivo JQuery-->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!--Archivos JavaScript-->
+    <script src="js/audio.js"></script>
+    <script src="js/efectos.js"></script>
+</body>
+</html>
