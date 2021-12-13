@@ -1,0 +1,2 @@
+# rincon-armonica
+Pequeño sitio web en donde se aprecia información alusiva a uno de mis instrumentos musicales favoritos, la armónica. También incluye un video sobre como interpretar "Imagine" de John Lennon y un audio sobre una entrevista con una apasionada al instrumento. El sitio presenta una característica particular para accesibilidad web, un panel interactivo (presente en versión escritorio) con botones para generar comportamientos al sitio.
